@@ -1,8 +1,8 @@
 from poblacion import *
 
 #Apartado 1
-if __name__ == "__main__":
+
     
-    pais =lee_poblaciones(ruta_csv)
-    tipo_pais = tipo_paises(lista_poblacion)
-    print(pais)
+lectura_paises = lee_poblaciones("data/population.csv") 
+for r in lectura_paises:
+    print(r)
