@@ -19,10 +19,11 @@ def lee_poblaciones(ruta_csv):
 
 def tipo_paises(tupla):
     lista_paises = []
-    paises = {pais[0] for pais in tupla}
-    resultado = lista_paises.append(paises)
-    sorted(paises)
-    return resultado
+    for pais in tupla:
+        lista_paises.append(pais[0])
+
+    nombres_paises = set(lista_paises)
+    return sorted(nombres_paises)
         
         
         
